@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication
+	x:Class="SchoolAPP.App"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:prism="http://prismlibrary.com">
+	<Application.Resources>
+
+		<ResourceDictionary>
+			<x:String x:Key="ApiBaseUrl">https://dzzqk7t1-44398.uks1.devtunnels.ms</x:String>
+			<x:String x:Key="ApiCreateToken">/Accounts/CreateToken</x:String>
+			<x:String x:Key="ApiSchoolPrefix">/api</x:String>
+			<x:String x:Key="ApiSchoolStudent">/GetStudentByUserName</x:String>
+			<x:String x:Key="ApiSchoolStudentCourses">/GetStudentCourses</x:String>
+			<x:String x:Key="ApiSchoolStudentEvaluations">/GetStudentEvaluations</x:String>
+			<!--  Colours  -->
+			<x:String x:Key="RoyalBlue">#4169E1</x:String>
+			<x:String x:Key="White">#FFFFFF</x:String>
+			<x:String x:Key="Black">#000000</x:String>
+			<!--  Styles  -->
+			<Style TargetType="Entry">
+				<Setter Property="BackgroundColor" Value="WhiteSmoke" />
+			</Style>
+		</ResourceDictionary>
+
+	</Application.Resources>
+</prism:PrismApplication>

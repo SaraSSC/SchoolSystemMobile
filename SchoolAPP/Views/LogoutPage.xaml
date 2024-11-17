@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+	x:Class="SchoolAPP.Views.LogoutPage"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:prism="http://prismlibrary.com"
+	prism:ViewModelLocator.AutowireViewModel="True">
+
+	<!--<ContentPage.Behaviors>
+		<prism:EventToCommandBehavior Command="{Binding LoadedCommand}" EventName="Appearing" />
+	</ContentPage.Behaviors>-->
+
+	<StackLayout Margin="40,90,40,50">
+		<Label
+			FontSize="20"
+			HorizontalOptions="Center"
+			Text="Until next time :)"
+			TextColor="#674f2d"
+			VerticalOptions="Center" />
+		<ActivityIndicator
+			IsRunning="{Binding IsRunning}"
+			IsTabStop="True"
+			Color="Goldenrod" />
+		<Button
+			BackgroundColor="RoyalBlue"
+			Command="{Binding LoadedCommand}"
+			CornerRadius="50"
+			Text="Login"
+			TextColor="White"
+			VerticalOptions="CenterAndExpand" />
+
+
+	</StackLayout>
+</ContentPage>
